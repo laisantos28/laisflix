@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineVision - Filmes e Séries</title>
+    <title>CineVision - Detalhes do Filme</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Cabeçalho com logo e menu de navegação -->
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <img src="data:image/png;base64,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" alt="Logo CineVision">
@@ -22,46 +22,42 @@
         </nav>
     </header>
 
-    <!-- Seção de lançamentos e destaques -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bem-vindo ao CineVision</h1>
-            <p>Os melhores filmes e séries em um só lugar. Veja os últimos lançamentos e os títulos mais populares.</p>
-            <a href="catalog.html" class="cta-button">Explorar Catálogo</a>
+    <!-- Detalhes do filme/série -->
+    <section class="movie-details">
+        <div class="movie-poster">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWCo71Imdx5aEIO6VQ2MS8eWvymlsfWpbwvy269YA3UpYgLAAUEcxmEf0evt9b7KntkQMvBKKTVdlwoXbg2M1ycDGW7d46U2dlvZzGXNxrX0p2Oc5w7nSPpsLbq0FjbyBQHaTZpcnYbbE/s1600/Dark-Netflix.jpg" alt="Filme 1">
+        </div>
+        <div class="movie-info">
+            <h1>Dark</h1>
+            <p><strong>Avaliação:</strong> 4.5 estrelas</p>
+            <p><strong>Gênero:</strong> Ação, Aventura</p>
+            <p><strong>Sinopse:</strong> Uma aventura emocionante cheia de ação e suspense.</p>
+            <p><strong>Elenco:</strong> Ator 1, Atriz 2, Ator 3</p>
+            <a href="#" class="cta-button">Assistir Trailer</a>
         </div>
     </section>
 
-    <!-- Seção de destaques -->
-    <section class="highlights">
-        <h2>Destaques</h2>
-        <div class="highlight-grid">
-            <div class="highlight-item">
-                <img src="https://wp.ufpel.edu.br/empauta/files/2018/02/AFormaAguacartaz.jpg" alt="Filme 1">
-                <h3>A formula da agua</h3>
-                <p>Em meio aos grandes conflitos políticos e transformações sociais dos Estados Unidos, durante a Guerra Fria, a muda Elisa (Sally Hawkins), zeladora em um laboratório experimental secreto do governo, se afeiçoa a uma criatura fantástica mantida presa e maltratada no local.</p>
+    <!-- Comentários e avaliações -->
+    <section class="reviews">
+        <h2>Avaliações dos Usuários</h2>
+        <div class="review-list">
+            <div class="review">
+                <p><strong>Usuário 1:</strong> Excelente filme, muita ação!</p>
             </div>
-            <div class="highlight-item">
-                <img src="https://cdn.blog.estrategiavestibulares.com.br/vestibulares/wp-content/uploads/2023/07/oppenheimer-filme.webp" alt="Filme 2">
-                <h3>Oppenheimer</h3>
-                <p>A trama acompanha o físico e um grupo formado por outros cientistas ao longo do processo de desenvolvimento da arma nuclear que foi responsável pelas tragédias nas cidades de Hiroshima e Nagasaki, no Japão, em 1945..</p>
-            </div>
-            <div class="highlight-item">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWCo71Imdx5aEIO6VQ2MS8eWvymlsfWpbwvy269YA3UpYgLAAUEcxmEf0evt9b7KntkQMvBKKTVdlwoXbg2M1ycDGW7d46U2dlvZzGXNxrX0p2Oc5w7nSPpsLbq0FjbyBQHaTZpcnYbbE/s1600/Dark-Netflix.jpg" alt="Série 1">
-                <h3>Dark</h3>
-                <p>Quatro famílias iniciam uma desesperada busca por respostas quando uma criança desaparece e um complexo mistério envolvendo três gerações começa a se revelar. Assista o quanto quiser.</p>
+            <div class="review">
+                <p><strong>Usuário 2:</strong> Um dos melhores que já vi!</p>
             </div>
         </div>
+        <form class="review-form">
+            <label for="comment">Deixe sua avaliação:</label>
+            <textarea id="comment" name="comment"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 CineVision. Todos os direitos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="#">Termos de Uso</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-            </ul>
-        </nav>
     </footer>
 
 </body>
